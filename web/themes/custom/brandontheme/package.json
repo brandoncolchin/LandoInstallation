@@ -18,11 +18,15 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
+    "node-gyp": "^3.8.0",
     "yargs": "^10.0.3"
   },
   "description": "Gulp tooling for Basic",
   "main": "gulpfile.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-sass": "^3.0.2"
+  },
   "author": "",
   "license": "MIT"
 }
