@@ -25,7 +25,9 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "grunt": "^1.0.3",
-    "grunt-sass": "^3.0.2"
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.9.3"
   },
   "author": "",
   "license": "MIT"

@@ -1,15 +1,20 @@
 module.exports = function(grunt){
 
-  // Configure main project settings
-  grunt.initConfig{{
-
-    // Basic settings and info about our plugins
-    pkg: grunt.file.readJSON('package.json'),
-
-    // Name of plugin ( name of plugni without the "grunt-contrib-")
-    sass: {
-      
+  grunt.initConfig({
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
+        },
+        files: {                         // Dictionary of files
+          'sass/brandon.css': 'sass/brandon.scss'       // 'destination': 'source'
+        }
+      }
     }
+  });
 
-  }};
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  grunt.registerTask('default', ['sass']);
+
 };
