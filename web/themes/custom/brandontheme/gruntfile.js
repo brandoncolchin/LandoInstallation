@@ -7,7 +7,7 @@ module.exports = function(grunt){
           style: 'expanded'
         },
         files: {                         // Dictionary of files
-          'sass/brandon.css': 'sass/brandon.scss'       // 'destination': 'source'
+          'css/brandon/brandon.css': 'sass/brandon/brandon.scss'       // 'destination': 'source'
         }
       }
     }
