@@ -27,6 +27,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "kint-php/kint": "^3.0",
         "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
