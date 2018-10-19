@@ -8,10 +8,9 @@ global:
     component:
       css/components/components.css: {}
     theme:
+      css/theme/brandon.css: {}
       css/theme/theme.css: {}
       css/theme/print.css: { media: print }
-    brandon:
-      css/brandon/brandon.css: {}
   js:
     js/modernizr.js: {}
   #   js/build/scripts.js: {}
