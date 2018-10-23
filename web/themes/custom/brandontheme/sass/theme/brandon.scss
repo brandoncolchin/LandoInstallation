@@ -1,8 +1,30 @@
 $sidebar-collapse: "only screen and (max-width : 719px)";
 
-@media #{$sidebar-collapse} {
-  div#content-wrapper {
+@mixin breakpoint($point) {
+  @if $point == big-break {
+    @media only screen and (max-width: 1600px) { @content; }
+  }
+  @else if $point == medium-break {
+    @media only screen and (max-width: 1250px) { @content; }
+  }
+  @else if $point == sidebar-collapse {
+    @media only screen and (max-width: 719px)  { @content; }
+  }
+  @else if $point == small-break {
+    @media only screen and (max-width: 650px)  { @content; }
+  }
+}
+
+div#content-wrapper {
+  @include breakpoint(sidebar-collapse) {
     margin: 0;
     width: 100%;
   }
+}
+
+.page-example-code {
+  width: 75%;
+  @include breakpoint(big-break) { width: 60%; }
+  @include breakpoint(medium-break) { width: 80%; }
+  @include breakpoint(small-break) { width: 95%; }
 }
